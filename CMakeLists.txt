@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
 
-set(BUILD_SHARED_LIBS true)
-
 project(libpebliss VERSION "1.0.0")
 
 file(GLOB SOURCES "src/*.cpp")
