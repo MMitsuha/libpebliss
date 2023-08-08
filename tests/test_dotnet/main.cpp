@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 {
 	PE_TEST_START
 		
-	std::auto_ptr<std::ifstream> pe_file;
+	std::unique_ptr<std::ifstream> pe_file;
 	if(!open_pe_file(argc, argv, pe_file))
 		return -1;
 

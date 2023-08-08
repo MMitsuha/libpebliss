@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	try
 	{
 		//Новый образ, который мы создадим из открытого с нуля
-		std::auto_ptr<pe_base> new_image;
+		std::unique_ptr<pe_base> new_image;
 
 		{
 			//Создаем экземпляр PE или PE+ класса с помощью фабрики

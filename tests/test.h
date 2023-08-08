@@ -93,7 +93,7 @@ static void pe_test_error(const std::exception& e,
 
 
 #ifndef PE_FILES_UNUSED
-static bool open_pe_file(int argc, char* argv[], std::auto_ptr<std::ifstream>& pe_file)
+static bool open_pe_file(int argc, char* argv[], std::unique_ptr<std::ifstream>& pe_file)
 {
 	if(argc != 2)
 	{

@@ -12,11 +12,11 @@ int main(int argc, char* argv[])
 {
 	PE_TEST_START
 	
-	std::auto_ptr<std::ifstream> pe_file;
+	std::unique_ptr<std::ifstream> pe_file;
 	if(!open_pe_file(argc, argv, pe_file))
 		return -1;
 
-	std::auto_ptr<pe_base> image;
+	std::unique_ptr<pe_base> image;
 	PE_TEST_EXCEPTION(image.reset(new pe_base(pe_factory::create_pe(*pe_file))), "Creation, type detection and copying test", test_level_critical);
 	
 	PE_TEST(!image->has_overlay(), "Overlay test", test_level_normal);
@@ -440,7 +440,7 @@ int main(int argc, char* argv[])
 		std::stringstream new_pe(std::ios::in | std::ios::out | std::ios::binary);
 		PE_TEST_EXCEPTION(rebuild_pe(*image, new_pe, false, true, true), "Rebuild PE test 1", test_level_critical);
 
-		std::auto_ptr<pe_base> new_image;
+		std::unique_ptr<pe_base> new_image;
 		PE_TEST_EXCEPTION(new_image.reset(new pe_base(pe_factory::create_pe(new_pe))), "Creation, type detection and copying test 2", test_level_critical);
 		
 		section_list& sections = image->get_image_sections();
@@ -484,7 +484,7 @@ int main(int argc, char* argv[])
 		std::stringstream new_pe_data(std::ios::in | std::ios::out | std::ios::binary);
 		PE_TEST_EXCEPTION(rebuild_pe(new_pe, new_pe_data, false, true), "Rebuild PE test 3", test_level_critical);
 
-		std::auto_ptr<pe_base> new_pe_after_rebuild;
+		std::unique_ptr<pe_base> new_pe_after_rebuild;
 		PE_TEST_EXCEPTION(new_pe_after_rebuild.reset(new pe_base(pe_factory::create_pe(new_pe_data))), "Creation, type detection and copying test 4", test_level_critical);
 		PE_TEST(new_pe_after_rebuild->get_section_alignment() == 0x1000, "Empty PE Read test 1", test_level_normal);
 		PE_TEST(new_pe_after_rebuild->get_number_of_sections() == 0, "Empty PE Read test 2", test_level_normal);
