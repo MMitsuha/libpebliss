@@ -17,7 +17,7 @@
 #define PE_BOUND_IMPORT_TEST_64 "../pe_files/bound64.exe"
 #define PE_TEST_MESSAGE_TABLE "../pe_files/message_table_resource.exe"
 
-class testcase
+class PEBLISS_API testcase
 {
 public:
 	testcase(const std::string& binary_name, const std::string& testcase_name, const std::vector<std::string>& command_lines = std::vector<std::string>())

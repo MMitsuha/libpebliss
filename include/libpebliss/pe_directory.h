@@ -4,7 +4,7 @@
 namespace pe_bliss
 {
 //Class representing image directory data
-class image_directory
+class PEBLISS_API image_directory
 {
 public:
 	//Default constructor

@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	try
 	{
-		// Create an instance of a PE or PE + class using a factory
+		// Create an instance of a PE or PE + class PEBLISS_API using a factory
 		pe_base image(pe_factory::create_pe(pe_file));
 
 		// Get the list of imported libraries and functions.

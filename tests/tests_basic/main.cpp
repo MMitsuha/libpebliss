@@ -355,28 +355,28 @@ int main(int argc, char* argv[])
 
 	{
 		const section& s = image->get_image_sections().at(0);
-		PE_TEST(s.get_characteristics() == 0x60000020, "Section class test 1", test_level_normal);
-		PE_TEST(s.get_name() == ".text", "Section class test 2", test_level_normal);
-		PE_TEST(s.get_pointer_to_raw_data() == 0x400, "Section class test 3", test_level_normal);
-		PE_TEST(s.get_virtual_address() == 0x1000, "Section class test 4", test_level_normal);
+		PE_TEST(s.get_characteristics() == 0x60000020, "Section class PEBLISS_API test 1", test_level_normal);
+		PE_TEST(s.get_name() == ".text", "Section class PEBLISS_API test 2", test_level_normal);
+		PE_TEST(s.get_pointer_to_raw_data() == 0x400, "Section class PEBLISS_API test 3", test_level_normal);
+		PE_TEST(s.get_virtual_address() == 0x1000, "Section class PEBLISS_API test 4", test_level_normal);
 
 		if(image->get_pe_type() == pe_type_32)
 		{
-			PE_TEST(s.get_size_of_raw_data() == 0x16E00, "Section class test 5", test_level_normal);
-			PE_TEST(s.get_virtual_size() == 0x16C0D, "Section class test 6", test_level_normal);
+			PE_TEST(s.get_size_of_raw_data() == 0x16E00, "Section class PEBLISS_API test 5", test_level_normal);
+			PE_TEST(s.get_virtual_size() == 0x16C0D, "Section class PEBLISS_API test 6", test_level_normal);
 		}
 		else
 		{
-			PE_TEST(s.get_size_of_raw_data() == 0x19400, "Section class test 5", test_level_normal);
-			PE_TEST(s.get_virtual_size() == 0x1923E, "Section class test 6", test_level_normal);
+			PE_TEST(s.get_size_of_raw_data() == 0x19400, "Section class PEBLISS_API test 5", test_level_normal);
+			PE_TEST(s.get_virtual_size() == 0x1923E, "Section class PEBLISS_API test 6", test_level_normal);
 		}
 		
-		PE_TEST(s.readable(), "Section class test 7", test_level_normal);
-		PE_TEST(s.executable(), "Section class test 8", test_level_normal);
-		PE_TEST(!s.writeable(), "Section class test 9", test_level_normal);
-		PE_TEST(!s.shared(), "Section class test 10", test_level_normal);
-		PE_TEST(!s.discardable(), "Section class test 11", test_level_normal);
-		PE_TEST(!s.empty(), "Section class test 12", test_level_normal);
+		PE_TEST(s.readable(), "Section class PEBLISS_API test 7", test_level_normal);
+		PE_TEST(s.executable(), "Section class PEBLISS_API test 8", test_level_normal);
+		PE_TEST(!s.writeable(), "Section class PEBLISS_API test 9", test_level_normal);
+		PE_TEST(!s.shared(), "Section class PEBLISS_API test 10", test_level_normal);
+		PE_TEST(!s.discardable(), "Section class PEBLISS_API test 11", test_level_normal);
+		PE_TEST(!s.empty(), "Section class PEBLISS_API test 12", test_level_normal);
 	}
 
 	{

@@ -6,7 +6,7 @@
 
 namespace pe_bliss
 {
-class pe_utils
+class PEBLISS_API pe_utils
 {
 public:
 	//Returns true if string "data" with maximum length "raw_length" is null-terminated

@@ -1,9 +1,10 @@
 #pragma once
 #include <ostream>
+#include "stdint_defs.h"
 
 namespace pe_bliss
 {
-class pe_base;
+class PEBLISS_API pe_base;
 //Rebuilds PE image, writes resulting image to ostream "out". If strip_dos_header == true, DOS header will be stripped a little
 //If change_size_of_headers == true, SizeOfHeaders will be recalculated automatically
 //If save_bound_import == true, existing bound import directory will be saved correctly (because some compilers and bind.exe put it to PE headers)

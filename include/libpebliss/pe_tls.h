@@ -9,7 +9,7 @@ namespace pe_bliss
 //Class representing TLS info
 //We use "DWORD" type to represent RVAs, because RVA is
 //always 32bit even in PE+
-class tls_info
+class PEBLISS_API tls_info
 {
 public:
 	typedef std::vector<uint32_t> tls_callback_list;

@@ -8,10 +8,10 @@
 
 namespace pe_bliss
 {
-//Helper class to read version information
+//Helper class PEBLISS_API to read version information
 //lang_string_values_map: map of version info strings with encodings
 //translation_values_map: map of translations
-class version_info_viewer
+class PEBLISS_API version_info_viewer
 {
 public:
 	//Useful typedefs

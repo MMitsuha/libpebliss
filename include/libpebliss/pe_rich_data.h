@@ -5,8 +5,8 @@
 
 namespace pe_bliss
 {
-//Rich data overlay class of Microsoft Visual Studio
-class rich_data
+//Rich data overlay class PEBLISS_API of Microsoft Visual Studio
+class PEBLISS_API rich_data
 {
 public:
 	//Default constructor

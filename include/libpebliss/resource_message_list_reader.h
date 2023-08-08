@@ -3,12 +3,12 @@
 
 namespace pe_bliss
 {
-class pe_resource_viewer;
+class PEBLISS_API pe_resource_viewer;
 
 //ID; message_table_item
 typedef std::map<uint32_t, message_table_item> resource_message_list;
 
-class resource_message_list_reader
+class PEBLISS_API resource_message_list_reader
 {
 public:
 	resource_message_list_reader(const pe_resource_viewer& res);

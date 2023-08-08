@@ -619,6 +619,6 @@ pe_type pe_properties_generic<PEClassType>::get_pe_type() const
 }
 
 //Two used instantiations for PE32 (PE) and PE64 (PE+)
-template class pe_properties_generic<pe_types_class_32>;
-template class pe_properties_generic<pe_types_class_64>;
+template class PEBLISS_API pe_properties_generic<pe_types_class_32>;
+template class PEBLISS_API pe_properties_generic<pe_types_class_64>;
 }

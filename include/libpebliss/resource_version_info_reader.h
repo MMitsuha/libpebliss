@@ -6,9 +6,9 @@
 
 namespace pe_bliss
 {
-class pe_resource_viewer;
+class PEBLISS_API pe_resource_viewer;
 
-class resource_version_info_reader
+class PEBLISS_API resource_version_info_reader
 {
 public: //VERSION INFO
 	resource_version_info_reader(const pe_resource_viewer& res);

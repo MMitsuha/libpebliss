@@ -29,7 +29,7 @@
 namespace pe_bliss
 {
 //Portable executable class
-class pe_base
+class PEBLISS_API pe_base
 {
 public: //CONSTRUCTORS
 	//Constructor from stream

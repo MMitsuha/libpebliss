@@ -4,9 +4,9 @@
 
 namespace pe_bliss
 {
-class pe_resource_manager;
+class PEBLISS_API pe_resource_manager;
 
-class resource_bitmap_writer
+class PEBLISS_API resource_bitmap_writer
 {
 public:
 	resource_bitmap_writer(pe_resource_manager& res);

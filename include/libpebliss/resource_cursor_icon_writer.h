@@ -6,9 +6,9 @@
 
 namespace pe_bliss
 {
-class pe_resource_manager;
+class PEBLISS_API pe_resource_manager;
 
-class resource_cursor_icon_writer
+class PEBLISS_API resource_cursor_icon_writer
 {
 public:
 	//Determines, how new icon(s) or cursor(s) will be placed

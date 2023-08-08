@@ -9,7 +9,7 @@ namespace pe_bliss
 //Class representing relocation entry
 //RVA of relocation is not actually RVA, but
 //(real RVA) - (RVA of table)
-class relocation_entry
+class PEBLISS_API relocation_entry
 {
 public:
 	//Default constructor
@@ -44,7 +44,7 @@ private:
 };
 
 //Class representing relocation table
-class relocation_table
+class PEBLISS_API relocation_table
 {
 public:
 	typedef std::vector<relocation_entry> relocation_list;

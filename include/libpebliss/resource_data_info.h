@@ -4,10 +4,10 @@
 
 namespace pe_bliss
 {
-class resource_data_entry;
+class PEBLISS_API resource_data_entry;
 
 //Class representing resource data
-class resource_data_info
+class PEBLISS_API resource_data_info
 {
 public:
 	//Constructor from data

@@ -13,8 +13,8 @@
 
 namespace pe_bliss
 {
-//Derived class to edit PE resources
-class pe_resource_manager : public pe_resource_viewer
+//Derived class PEBLISS_API to edit PE resources
+class PEBLISS_API pe_resource_manager : public pe_resource_viewer
 {
 public:
 	//Constructor from root resource directory

@@ -6,7 +6,7 @@
 namespace pe_bliss
 {
 //Structure representing message table string
-class message_table_item
+class PEBLISS_API message_table_item
 {
 public:
 	//Default constructor

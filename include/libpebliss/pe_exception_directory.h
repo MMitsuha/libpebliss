@@ -6,7 +6,7 @@
 namespace pe_bliss
 {
 //Class representing exception directory entry
-class exception_entry
+class PEBLISS_API exception_entry
 {
 public:
 	//Default constructor

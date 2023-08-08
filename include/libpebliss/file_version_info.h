@@ -7,7 +7,7 @@
 namespace pe_bliss
 {
 //Structure representing fixed file version info
-class file_version_info
+class PEBLISS_API file_version_info
 {
 public:
 	//Enumeration of file operating system types

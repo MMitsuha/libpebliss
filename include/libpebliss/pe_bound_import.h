@@ -8,7 +8,7 @@
 namespace pe_bliss
 {
 //Class representing bound import reference
-class bound_import_ref
+class PEBLISS_API bound_import_ref
 {
 public:
 	//Default constructor
@@ -33,7 +33,7 @@ private:
 };
 
 //Class representing image bound import information
-class bound_import
+class PEBLISS_API bound_import
 {
 public:
 	typedef std::vector<bound_import_ref> ref_list;

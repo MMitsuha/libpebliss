@@ -2,7 +2,7 @@
 
 namespace pe_bliss
 {
-//Helper class to reduce code size and ease its editing
+//Helper class PEBLISS_API to reduce code size and ease its editing
 template<
 	typename NtHeadersType,
 	typename OptHeadersType,
@@ -11,7 +11,7 @@ template<
 	BaseSizeType ImportSnapFlagVal,
 	typename TLSStructType,
 	typename ConfigStructType>
-class pe_types
+class PEBLISS_API pe_types
 {
 public:
 	typedef NtHeadersType NtHeaders; //NT HEADERS type
@@ -24,10 +24,10 @@ public:
 	static const BaseSize ImportSnapFlag = ImportSnapFlagVal; //Import snap flag value
 };
 
-//Portable Executable derived class for PE and PE+
+//Portable Executable derived class PEBLISS_API for PE and PE+
 //Describes PE/PE+ dependent things
 template<typename PEClassType>
-class pe_properties_generic : public pe_properties
+class PEBLISS_API pe_properties_generic : public pe_properties
 {
 public: //Constructor
 	virtual std::unique_ptr<pe_properties> duplicate() const;

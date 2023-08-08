@@ -5,12 +5,12 @@
 
 namespace pe_bliss
 {
-class pe_resource_viewer;
+class PEBLISS_API pe_resource_viewer;
 
 //ID; string
 typedef std::map<uint16_t, std::wstring> resource_string_list;
 
-class resource_string_table_reader
+class PEBLISS_API resource_string_table_reader
 {
 public:
 	resource_string_table_reader(const pe_resource_viewer& res);

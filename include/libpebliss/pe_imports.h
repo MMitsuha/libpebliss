@@ -8,7 +8,7 @@
 namespace pe_bliss
 {
 //Class representing imported function
-class imported_function
+class PEBLISS_API imported_function
 {
 public:
 	//Default constructor
@@ -46,7 +46,7 @@ private:
 };
 
 //Class representing imported library information
-class import_library
+class PEBLISS_API import_library
 {
 public:
 	typedef std::vector<imported_function> imported_list;
@@ -94,7 +94,7 @@ private:
 
 //Simple import directory rebuilder
 //Class representing import rebuilder advanced settings
-class import_rebuilder_settings
+class PEBLISS_API import_rebuilder_settings
 {
 public:
 	//Default constructor

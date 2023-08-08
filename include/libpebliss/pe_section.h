@@ -13,7 +13,7 @@ enum section_data_type
 };
 
 //Class representing image section
-class section
+class PEBLISS_API section
 {
 public:
 	//Default constructor

@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 
+set(BUILD_SHARED_LIBS true)
+
 project(libpebliss VERSION "1.0.0")
 
 file(GLOB SOURCES "src/*.cpp")
@@ -7,6 +9,15 @@ file(GLOB HEADERS "include/libpebliss/*.h")
 include_directories("include/libpebliss")
 
 add_library(libpebliss ${SOURCES} ${HEADERS})
+
+set(MASTER_PROJECT off)
+if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
+    target_compile_definitions(libpebliss PUBLIC pebliss_EXPORTS)
+endif()
+
+if(BUILD_SHARED_LIBS)
+    target_compile_definitions(libpebliss PUBLIC PEBLISS_SHARED_LIB)
+endif()
 
 set_target_properties(libpebliss PROPERTIES CXX_STANDARD 20
                                           CXX_STANDARD_REQUIRED ON
@@ -21,7 +32,7 @@ set_target_properties(libpebliss PROPERTIES CXX_STANDARD 20
                                           MINSIZEREL_POSTFIX "msr"
                                           RELWITHDEBINFO_POSTFIX "rwdi")
 
-SET(PEBLISS_CMAKE_DIR ${CMAKE_INSTALL_LIBDIR}/cmake/pebliss CACHE STRING
+set(PEBLISS_CMAKE_DIR ${CMAKE_INSTALL_LIBDIR}/cmake/pebliss CACHE STRING
         "Installation directory for cmake files, relative to ${CMAKE_INSTALL_PREFIX}.")
 
 # Use GNU install directories if CMAKE_INSTALL_PREFIX not specified

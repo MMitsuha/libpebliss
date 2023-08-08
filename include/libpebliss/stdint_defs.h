@@ -22,3 +22,17 @@ namespace pe_bliss
 #else
 #include <stdint.h>
 #endif
+
+#if defined(PEBLISS_SHARED_LIB)
+#    if defined(_WIN32)
+#        ifdef pebliss_EXPORTS
+#            define PEBLISS_API __declspec(dllexport)
+#        else // !pebliss_EXPORTS
+#            define PEBLISS_API __declspec(dllimport)
+#        endif
+#    else // !defined(_WIN32)
+#        define PEBLISS_API __attribute__((visibility("default")))
+#    endif
+#else // !defined(PEBLISS_SHARED_LIB)
+#    define PEBLISS_API
+#endif

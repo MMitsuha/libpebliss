@@ -9,7 +9,7 @@
 namespace pe_bliss
 {
 	//PE resource manager allows to read resources from PE files
-class pe_resource_viewer
+class PEBLISS_API pe_resource_viewer
 {
 public:
 	//Resource type enumeration

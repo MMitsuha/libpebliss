@@ -2,7 +2,7 @@
 
 namespace pe_bliss
 {
-//PE exception class constructors
+//PE exception class PEBLISS_API constructors
 pe_exception::pe_exception(const char* text, exception_id id)
 	:std::runtime_error(text), id_(id)
 {}

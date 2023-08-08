@@ -4,9 +4,9 @@
 
 namespace pe_bliss
 {
-class pe_resource_viewer;
+class PEBLISS_API pe_resource_viewer;
 
-class resource_cursor_icon_reader
+class PEBLISS_API resource_cursor_icon_reader
 {
 public:
 	resource_cursor_icon_reader(const pe_resource_viewer& res);

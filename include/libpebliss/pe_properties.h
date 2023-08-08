@@ -4,7 +4,7 @@
 
 namespace pe_bliss
 {
-class pe_properties
+class PEBLISS_API pe_properties
 {
 public: //Constructors
 	virtual std::unique_ptr<pe_properties> duplicate() const = 0;

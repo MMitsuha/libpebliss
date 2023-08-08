@@ -1,11 +1,12 @@
 #pragma once
 #include <exception>
 #include <stdexcept>
+#include "stdint_defs.h"
 
 namespace pe_bliss
 {
 //PE exception class
-class pe_exception : public std::runtime_error
+class PEBLISS_API pe_exception : public std::runtime_error
 {
 public:
 	//Exception IDs

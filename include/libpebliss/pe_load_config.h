@@ -7,7 +7,7 @@
 namespace pe_bliss
 {
 //Class representing image configuration information
-class image_config_info
+class PEBLISS_API image_config_info
 {
 public:
 	typedef std::vector<uint32_t> se_handler_list;

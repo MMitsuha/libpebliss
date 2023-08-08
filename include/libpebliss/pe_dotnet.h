@@ -5,7 +5,7 @@
 namespace pe_bliss
 {
 //Class representing basic .NET header information
-class basic_dotnet_info
+class PEBLISS_API basic_dotnet_info
 {
 public:
 	//Default constructor

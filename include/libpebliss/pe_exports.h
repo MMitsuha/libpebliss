@@ -8,7 +8,7 @@
 namespace pe_bliss
 {
 //Class representing exported function
-class exported_function
+class PEBLISS_API exported_function
 {
 public:
 	//Default constructor
@@ -60,7 +60,7 @@ private:
 };
 
 //Class representing export information
-class export_info
+class PEBLISS_API export_info
 {
 public:
 	//Default constructor

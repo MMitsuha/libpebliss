@@ -4,7 +4,7 @@
 
 namespace pe_bliss
 {
-class entropy_calculator
+class PEBLISS_API entropy_calculator
 {
 public:
 	//Calculates entropy for PE image section

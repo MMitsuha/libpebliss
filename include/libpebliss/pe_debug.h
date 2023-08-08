@@ -6,7 +6,7 @@
 namespace pe_bliss
 {
 //Class representing advanced RSDS (PDB 7.0) information
-class pdb_7_0_info
+class PEBLISS_API pdb_7_0_info
 {
 public:
 	//Default constructor
@@ -28,7 +28,7 @@ private:
 };
 
 //Class representing advanced NB10 (PDB 2.0) information
-class pdb_2_0_info
+class PEBLISS_API pdb_2_0_info
 {
 public:
 	//Default constructor
@@ -50,7 +50,7 @@ private:
 };
 
 //Class representing advanced misc (IMAGE_DEBUG_TYPE_MISC) info
-class misc_debug_info
+class PEBLISS_API misc_debug_info
 {
 public:
 	//Default constructor
@@ -77,7 +77,7 @@ private:
 };
 
 //Class representing COFF (IMAGE_DEBUG_TYPE_COFF) debug info
-class coff_debug_info
+class PEBLISS_API coff_debug_info
 {
 public:
 	//Structure representing COFF symbol
@@ -177,7 +177,7 @@ private:
 };
 
 //Class representing debug information
-class debug_info
+class PEBLISS_API debug_info
 {
 public:
 	//Enumeration of debug information types

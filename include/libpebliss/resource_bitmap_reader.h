@@ -4,9 +4,9 @@
 
 namespace pe_bliss
 {
-class pe_resource_viewer;
+class PEBLISS_API pe_resource_viewer;
 
-class resource_bitmap_reader
+class PEBLISS_API resource_bitmap_reader
 {
 public:
 	resource_bitmap_reader(const pe_resource_viewer& res);

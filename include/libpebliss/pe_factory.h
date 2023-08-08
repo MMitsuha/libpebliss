@@ -5,10 +5,10 @@
 
 namespace pe_bliss
 {
-class pe_factory
+class PEBLISS_API pe_factory
 {
 public:
-	//Creates pe_base class instance from PE or PE+ istream
+	//Creates pe_base class PEBLISS_API instance from PE or PE+ istream
 	//If read_bound_import_raw_data, raw bound import data will be read (used to get bound import info)
 	//If read_debug_raw_data, raw debug data will be read (used to get image debug info)
 	static pe_base create_pe(std::istream& file, bool read_debug_raw_data = true);

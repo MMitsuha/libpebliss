@@ -9,7 +9,7 @@
 namespace pe_bliss
 {
 //Class representing resource data entry
-class resource_data_entry
+class PEBLISS_API resource_data_entry
 {
 public:
 	//Default constructor
@@ -36,10 +36,10 @@ private:
 };
 
 //Forward declaration
-class resource_directory;
+class PEBLISS_API resource_directory;
 
 //Class representing resource directory entry
-class resource_directory_entry
+class PEBLISS_API resource_directory_entry
 {
 public:
 	//Default constructor
@@ -100,8 +100,8 @@ private:
 		includes();
 
 		//We use pointers, we're doing manual copying here
-		class resource_data_entry* data_;
-		class resource_directory* dir_; //We use pointer, because structs include each other
+		class PEBLISS_API resource_data_entry* data_;
+		class PEBLISS_API resource_directory* dir_; //We use pointer, because structs include each other
 	};
 
 	includes ptr_;
@@ -110,7 +110,7 @@ private:
 };
 
 //Class representing resource directory
-class resource_directory
+class PEBLISS_API resource_directory
 {
 public:
 	typedef std::vector<resource_directory_entry> entry_list;
